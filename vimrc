@@ -1,12 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"               
+"
 "               ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
 "               ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
-"               ██║   ██║██║██╔████╔██║██████╔╝██║     
-"               ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     
+"               ██║   ██║██║██╔████╔██║██████╔╝██║
+"               ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║
 "                ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
 "                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
-"               
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set default encoding utf-9
@@ -27,9 +27,6 @@ set wrap
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
-
-" Highlight cursor line underneath the cursor vertically.
-set cursorcolumn
 
 " Show partial command you type in the last line of the screen.
 set showcmd
@@ -53,6 +50,7 @@ set incsearch
 
 " Ignore capital letters during search.
 set ignorecase
+
 " Override the ignorecase option if searching for capital letters.
 " This will allow you to search specifically for capital letters.
 set smartcase
@@ -94,15 +92,18 @@ set softtabstop=2
 set list
 set listchars=tab:▸\ ,trail:▫
 
-
+" Do not let cursor at the end of page.
 set scrolloff=5
+
+" Disable long line auto broken
 set tw=0
+
 set indentexpr=
 set backspace=indent,eol,start
 set foldmethod=indent
 set foldlevel=99
 
-
+# Let cursor different in different mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
@@ -148,6 +149,7 @@ map S :w<CR>
 map Q :q<CR>
 map R :source $MYVIMRC<CR>
 
+" split window
 map sl :set splitright<CR>:vsplit<CR>
 map sj :set nosplitright<CR>:vsplit<CR>
 map sk :set nosplitbelow<CR>:split<CR>
@@ -168,4 +170,4 @@ map fj :-tabnext<CR>
 map fl :+tabnext<CR>
 
 " Use molokai colorscheme
-:colorscheme molokai
+colorscheme molokai
