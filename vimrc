@@ -134,40 +134,40 @@ set laststatus=2
 
 
 " Custom key map
-noremap m j
-noremap j h
-noremap K 5k
-noremap M 5j
-noremap J 5h
-noremap L 5l
-noremap = nzz
-noremap - Nzz
-noremap <LEADER><CR> :nohlsearch<CR>
+" noremap m j
+" noremap j h
+" noremap K 5k
+" noremap M 5j
+" noremap J 5h
+" noremap L 5l
+" noremap = nzz
+" noremap - Nzz
+" noremap <LEADER><CR> :nohlsearch<CR>
 
-map s <nop>
-map S :w<CR>
-map Q :q<CR>
-map R :source $MYVIMRC<CR>
+" map s <nop>
+" map S :w<CR>
+" map Q :q<CR>
+" map R :source $MYVIMRC<CR>
 
 " split window
-map sl :set splitright<CR>:vsplit<CR>
-map sj :set nosplitright<CR>:vsplit<CR>
-map sk :set nosplitbelow<CR>:split<CR>
-map sm :set splitbelow<CR>:split<CR>
+" map sl :set splitright<CR>:vsplit<CR>
+" map sj :set nosplitright<CR>:vsplit<CR>
+" map sk :set nosplitbelow<CR>:split<CR>
+" map sm :set splitbelow<CR>:split<CR>
 
-map <LEADER>l <C-w>l
-map <LEADER>m <C-w>j
-map <LEADER>j <C-w>h
-map <LEADER>k <C-w>k
+" map <LEADER>l <C-w>l
+" map <LEADER>m <C-w>j
+" map <LEADER>j <C-w>h
+" map <LEADER>k <C-w>k
 
 " map <up> :res +5<CR>
 " map <down> :res -5<CR>
 " map <left> :vertical resize-5<CR>
 " map <right> :vertical resize+5<CR>
 
-map fu :tabe<CR>
-map fj :-tabnext<CR>
-map fl :+tabnext<CR>
+" map fu :tabe<CR>
+" map fj :-tabnext<CR>
+" map fl :+tabnext<CR>
 
 " Use molokai colorscheme
 colorscheme molokai
