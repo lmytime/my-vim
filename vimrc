@@ -9,7 +9,7 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Set default encoding utf-9
+" Set default encoding utf-8
 set encoding=utf-8
 
 " Use space key as the map leader key.
@@ -160,10 +160,10 @@ map <LEADER>m <C-w>j
 map <LEADER>j <C-w>h
 map <LEADER>k <C-w>k
 
-map <up> :res +5<CR>
-map <down> :res -5<CR>
-map <left> :vertical resize-5<CR>
-map <right> :vertical resize+5<CR>
+" map <up> :res +5<CR>
+" map <down> :res -5<CR>
+" map <left> :vertical resize-5<CR>
+" map <right> :vertical resize+5<CR>
 
 map fu :tabe<CR>
 map fj :-tabnext<CR>
